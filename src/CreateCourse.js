@@ -59,7 +59,7 @@ const CreateCourse = ()=>
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ title: title,des:description,lang:selected.name,url:url })
             };
-          const res = await fetch('http://localhost:5000/course', requestOptions);
+          const res = await fetch('https://datasciencefeed-project.herokuapp.com/course', requestOptions);
           const jsondata = await res.json();
           alert(jsondata);
           if(jsondata=="course added")
