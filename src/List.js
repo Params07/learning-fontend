@@ -1,14 +1,14 @@
 import {React} from 'react';
 import ReactPlayer from 'react-player';
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
 
 
-const List = ({title,des,url})=>
+
+const List = ({title,des,url,id})=>
 {
     return(
         <>
-        <ScrollAnimation animateIn="rollin" animateOut="slideOutRight" >
+       
  
            <div className="pl-8 ... sm:pl-0 pt-8 ... sm:p-10 ">  
    
@@ -28,8 +28,7 @@ const List = ({title,des,url})=>
 
 
 
-   
-</ScrollAnimation>
+
 
         
        
