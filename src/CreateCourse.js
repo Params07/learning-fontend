@@ -79,8 +79,8 @@ const CreateCourse = ()=>
           
           
           
-          <div className="  sm:p-8  mt-8 ... pt-8 ... grid sm:justify-items-center ... w-80  ">
-              <div className="p-0 sm:p-4 md:3/5 sm:3/4  lg:w-2/5 w-80 grid justify-items-center ...  drop-shadow-lg rounded-lg bg-white ">
+          <div className="p-2  sm:p-8  mt-8 ... pt-8 ... grid sm:justify-items-center ... w-80  ">
+              <div className="p-2 sm:p-4 md:3/5 sm:3/4  lg:w-2/5 w-80 grid justify-items-center ...  drop-shadow-lg rounded-lg bg-white ">
               <div className="p-6 text-2xl font-semibold text-green-500 text-center ">
               CREATE NEW COURSE
           </div>
