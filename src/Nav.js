@@ -109,7 +109,7 @@ const Nav = () =>{
                </div>
       </div>
       
-    <div className="block  md:hidden bg-green-300 mt-4 ... pt-8 ... sm:p-8 ">
+    <div className="block  md:hidden bg-green-300 p-4 mt-4 ... pt-8 ... sm:p-8 ">
            <div className={` p-8 h-screen  ${value==0 ? "block":"hidden"}`}>
              <Home/>
            </div>
