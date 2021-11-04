@@ -109,16 +109,17 @@ const Nav = () =>{
                </div>
       </div>
       
-      <div className="block  md:hidden bg-green-300 p-4 pt-8 ... sm:p-8 ">
+    <div className="block  md:hidden bg-green-300 mt-4 ... pt-8 ... sm:p-8 ">
            <div className={` p-8 h-screen  ${value==0 ? "block":"hidden"}`}>
              <Home/>
            </div>
-           <span className={` pt-8 ... h-screeen ${value==1 ? "block":"hidden"}`}>
+           <span className={`p-4 pt-8 ... h-screeen ${value==1 ? "block":"hidden"}`}>
              <Content/>
            </span>
            <div className={`${value==2 ? "block":"hidden"}`}>
              <CreateCourse/>
            </div>
+
 
 
 
