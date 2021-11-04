@@ -91,14 +91,15 @@ const Nav = () =>{
 
            </span>
         </div>
-      <div className={`${sideNav ? "block":"hidden"} pt-8 ...  absolute bg-green-300 
-                        fixed inset-y-0 inset-x-0 top-0 left-0 md:w-1/3 sm:2/3 w-3/4    
-                      transition duration-300 ease-in-out divide-y-4 divide-opacity-85 border-r-4  border-white  divide-white p-2  h-full`}>
-             <div className=" p-2 text-white text-xl font-black font-serif .. ">
+      <div className={`${sideNav ? "block":"hidden"} pt-8 ...   bg-green-300 
+                        fixed inset-y-0 left-0 bottom-1  top-0  md:w-1/3 sm:2/3 w-3/4  h-screen  
+                      transition duration-300 ease-in-out divide-y-4 divide-opacity-85 border-r-4  border-white  divide-white p-2`}>
+             
+               <div className=" p-2 text-white text-xl font-black font-serif .. ">
                <span>COURSE CORNER</span>
              </div>
              <div className="pt-4 ...">
-              <span className="text-base text-white text-semibold font-serif ... ">
+              <span className="text-base text-white text-semibold font-mono ... ">
                <li onClick={(e)=>{setValue(0); setNav(false)}}
                 className={` ${(value==0)?"bg-white text-green-500":""} hover:bg-white hover:text-green-500 rounded px-4 py-2.5 cursor-default block`}>HOME</li>
                <li onClick={(e)=>{setValue(1);setNav(false)}}
@@ -109,7 +110,8 @@ const Nav = () =>{
                </div>
       </div>
       
-    <div className="block  md:hidden bg-green-300 p-4 mt-4 ... pt-8 ... sm:p-8 ">
+      
+      <div className="block  md:hidden bg-green-300 mt-4 ... pt-8 ... sm:p-8 ">
            <div className={` p-8 h-screen  ${value==0 ? "block":"hidden"}`}>
              <Home/>
            </div>
@@ -119,7 +121,6 @@ const Nav = () =>{
            <div className={`${value==2 ? "block":"hidden"}`}>
              <CreateCourse/>
            </div>
-
 
 
 
