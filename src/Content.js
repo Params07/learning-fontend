@@ -44,7 +44,7 @@ const Content =()=>
            setcheckbox(false);
    }
     const updateContents = async()=>{
-             const data = await fetch('http://localhost:5000/getcourse');
+             const data = await fetch('https://datasciencefeed-project.herokuapp.com/getcourse');
              const d = await data.json();
              setContents(d);
              setCon(d);
