@@ -10,9 +10,9 @@ const List = ({title,des,url})=>
         <>
         <ScrollAnimation animateIn="rollin" animateOut="slideOutRight" >
  
-           <div className="p-10 ">  
+           <div className=" pt-8 ... sm:p-10 ">  
    
-    <div className="max-w-sm rounded overflow-hidden  font-semibold hover:font-bold text-black bg-white shadow-inner  ">
+    <div className="w-64 sm:max-w-sm rounded overflow-hidden  font-semibold hover:font-bold text-black bg-white shadow-inner  ">
     <ReactPlayer  width="100%" height="100%"  url={url}  controls />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 hover:underline uppercase ...">{title}</div>
