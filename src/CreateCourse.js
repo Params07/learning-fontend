@@ -79,8 +79,8 @@ const CreateCourse = ()=>
           
           
           
-          <div className=" sm:p-8  mt-8 ... pt-8 ... grid justify-items-center ...   ">
-              <div className="p-0 sm:p-4 md:3/5 sm:3/4  lg:w-2/5 w-100 grid justify-items-center ...  drop-shadow-lg rounded-lg bg-white ">
+          <div className="  sm:p-8  mt-8 ... pt-8 ... grid sm:justify-items-center ... w-80  ">
+              <div className="p-0 sm:p-4 md:3/5 sm:3/4  lg:w-2/5 w-80 grid justify-items-center ...  drop-shadow-lg rounded-lg bg-white ">
               <div className="p-6 text-2xl font-semibold text-green-500 text-center ">
               CREATE NEW COURSE
           </div>
@@ -88,12 +88,12 @@ const CreateCourse = ()=>
               <form onSubmit={create} className="p-8">
                   <div>
                       <input required type="text" onChange={updateTitle} value={title}
-                       className="py-2 w-72 px-3 block border-2 border-green-400   focus:outline-none focus:border-green-600 focus:border-2 focus-ring-2 focus-ring-green-300 rounded-lg leading-6" placeholder="enter the title"/>
+                       className="py-2 w-64 sm:w-72 px-3 block border-2 border-green-400   focus:outline-none focus:border-green-600 focus:border-2 focus-ring-2 focus-ring-green-300 rounded-lg leading-6" placeholder="enter the title"/>
                   </div>
-                  <div className="w-72 pt-8 ....">
+                  <div className="w-64 sm:w-72 pt-8 ....">
                             <Listbox value={selected} onChange={setSelected}>
                                 <div className="  mt-1">
-                                <Listbox.Button className=" flow-root w-72 py-2 pl-3 pr-10 text-left bg-white rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus:ring-purple-600 focus-visible:ring-opacity-75
+                                <Listbox.Button className=" flow-root w-64 sm:w-72 py-2 pl-3 pr-6 text-left bg-white rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus:ring-purple-600 focus-visible:ring-opacity-75
                                  focus-visible:ring-green-600 focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 
                                  focus-visible:border-green-500 sm:text-sm">
                                     <div className="block float-left truncate text-green-500">{selected.name}</div>
@@ -110,7 +110,7 @@ const CreateCourse = ()=>
                                     leaveFrom="opacity-100"
                                     leaveTo="opacity-0"
                                 >
-                                    <Listbox.Options className="absolute w-72 py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 ring-1 ring-green-500 ring-opacity-5 focus:outline-none sm:text-sm">
+                                    <Listbox.Options className="absolute w-64 sm:w-72 py-1 mt-1 overflow-auto text-base bg-white rounded-md shadow-lg max-h-60 ring-1 ring-green-500 ring-opacity-5 focus:outline-none sm:text-sm">
                                     {lang.map((person, personIdx) => (
                                         <Listbox.Option
                                         key={personIdx}
@@ -149,10 +149,10 @@ const CreateCourse = ()=>
                             </Listbox>
     </div>
     <div className="pt-8 ...">
-                      <textarea  required onChange={updateDes}  value={description} rows="5" cols="32" className=" px-3 block border-2 border-green-300  focus:outline-none focus:border-green-600 focus-ring-2 focus-ring-green-500 rounded-lg leading-6" placeholder="enter the description"></textarea>
+                      <textarea  required onChange={updateDes}  value={description} rows="5" cols="28" className=" px-3 block border-2 border-green-300  focus:outline-none focus:border-green-600 focus-ring-2 focus-ring-green-500 rounded-lg leading-6" placeholder="enter the description"></textarea>
                   </div>
                   <div className="pt-8 ... ">
-                      <input  required type="url" onChange={updateUrl}  value={url} className="py-2 w-72 px-3 block border-2 border-green-400  focus:outline-none focus:border-green-600 focus-ring-2 focus-ring-green-500 rounded-lg leading-6" placeholder="enter the URL"/>
+                      <input  required type="url" onChange={updateUrl}  value={url} className="py-2 w-64 sm:w-72 px-3 block border-2 border-green-400  focus:outline-none focus:border-green-600 focus-ring-2 focus-ring-green-500 rounded-lg leading-6" placeholder="enter the URL"/>
                  
                   </div>
                   <div className={` p-1 text-sm text-red-600 ${(!error && url.length >0 )?"block":"hidden"}`}>
@@ -160,16 +160,16 @@ const CreateCourse = ()=>
                       </div>
                   <div className="p-8 grid justify-items-center ...">
                      <div>
-                      <input type="submit" className="px-5  py-2 rounded-lg block bg-green-300 hover:bg-green-400 text-white " value="CREATE"/>
+                      <input type="submit" className="px-3  py-2 rounded-lg block bg-green-300 hover:bg-green-400 text-white " value="CREATE"/>
                   </div>
                   </div>
 
               </form>
               </div>
 
-
-              <ReactPlayer className={`${error?"block":"hidden"}`} url={YTurl}  controls />
-
+            <div className="w-60 h-40">
+              <ReactPlayer width="100%" height="100" className={`${error?"block":"hidden"}`} url={YTurl}  controls />
+              </div>
          
           </div>
 
