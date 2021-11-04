@@ -63,7 +63,7 @@ const Content =()=>
         <div className={`grid justify-items-center ... fixed inset-x-0 left-0  ${checkbox ? "block":"hidden"}`}>
   <div className=" border-2 border-green-500 shadow-md sm:w-2/4  md:w-2/5 lg:w-1/3 rounded-lg ... h-full bg-white  w-54">
       <div className="p-1 pr-4 ... pl-4 ...">
-      <div className="grid grid-cols-1 divide-y-3  divide-green-500">
+      <div className="grid grid-cols-1 divide-y-4  divide-green-400">
          <div className="p-2 pb-3 ...">
             <span className="float-right transform hover:scale-110 duration-500 ease-in-out">
              <button onClick={(e)=>{setcheckbox(false)}}><svg xmlns="http://www.w3.org/2000/svg" class=" h-5 w-5  text-green-600" viewBox="0 0 20 20" fill="currentColor">
@@ -76,11 +76,12 @@ const Content =()=>
              
                  
           </div>  
+          <br></br>
           
          <div className="pt-2 ...">
          <CheckboxGroup name="languages" value={lang} onChange={setlang}>
           {(Checkbox) => (
-              <div className=" p-2 flex space-x-2 ... sm:space-x-4 ... lg:space-x-6 ... divide-x-2 divide-green-500 ">
+              <div className=" p-2 flex space-x-2 ... sm:space-x-4 ... lg:space-x-6 ... divide-x-4 divide-green-400 ">
               <div className="flex-cols font-serif ...">
                   <div className = "p-4 hover:text-green-600 font-semi-bold"><Checkbox value="C" /> C</div>
                   <div className = "p-4 hover:text-green-600 font-semi-bold"> <Checkbox value="Cpp" /> Cpp</div>
@@ -105,7 +106,7 @@ const Content =()=>
                <div>
                 <input type="button" onClick={ApplyFilter}
                  className="px-5 py-2 transform hover:scale-110 duration-400 ease-in-out
-                rounded-md block bg-green-400  text-white " 
+                rounded-md block bg-green-400  text-white hover:bg-green-500 " 
                 value="APPLY"/>
             </div>
             </div>
