@@ -98,7 +98,7 @@ const Nav = () =>{
                <span>COURSE CORNER</span>
              </div>
              <div className="pt-4 ...">
-              <span className="text-base text-white text-semibold font-mono ... ">
+              <span className="text-base text-white text-semibold font-serif ... ">
                <li onClick={(e)=>{setValue(0); setNav(false)}}
                 className={` ${(value==0)?"bg-white text-green-500":""} hover:bg-white hover:text-green-500 rounded px-4 py-2.5 cursor-default block`}>HOME</li>
                <li onClick={(e)=>{setValue(1);setNav(false)}}
