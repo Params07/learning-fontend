@@ -33,7 +33,9 @@ const Content =()=>
    }  
    const ApplyFilter = () =>
    {
-           var x = filtered.filter((e)=>
+            if(lang.length !=0)
+         {
+          var x = filtered.filter((e)=>
            {
                return (lang.some(function(l){
                    return l == e['lang']
@@ -41,6 +43,12 @@ const Content =()=>
            })
            setContents(x);
            setCon(x);
+        }
+        else
+        {
+            setContents(filtered);
+            setCon(filtered);
+        }
            setcheckbox(false);
    }
     const updateContents = async()=>{
