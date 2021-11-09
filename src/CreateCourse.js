@@ -79,29 +79,26 @@ const CreateCourse = ()=>
           
           
           
-          <div className="  sm:p-8  mt-8 ... pt-8 ... grid sm:justify-items-center ...   ">
-              <div className="p-0 sm:p-4 md:3/5 sm:3/4  lg:w-2/5 w-80 grid justify-items-center ...  rounded-lg bg-white ">
-              <div className="p-6 text-2xl font-semibold text-green-500 text-center ">
+          <div className=" pl-4 ... sm:p-8  mt-8 ... pt-8 ... grid sm:justify-items-center ...   ">
+              <div className="p-2 sm:p-4 md:3/5 sm:3/4  lg:w-2/5 w-80 grid justify-items-center ...  drop-shadow-lg rounded-lg bg-white ">
+              <div className="p-3 pt-6 ...  text-2xl font-semibold text-green-500 text-center ">
               CREATE NEW COURSE
           </div>
           
               <form onSubmit={create} className="p-8">
                   <div>
                       <input required type="text" onChange={updateTitle} value={title}
-                       className="py-2 w-64 sm:w-72 px-3 block border-2 border-green-300  
-                        focus:outline-none focus:border-green-300
+                       className="py-2
+                                  w-64 sm:w-72 px-3 block border-2 border-green-300   focus:outline-none  focus:border-green-300
                         focus:border-2
-                       focus:ring-4 focus:ring-green-100
-                       rounded-lg leading-6" placeholder="enter the title"/>
+                       focus:ring-4 focus:ring-green-100 rounded-lg leading-6" placeholder="enter the title"/>
                   </div>
                   <div className="w-64 sm:w-72 pt-8 ....">
                             <Listbox value={selected} onChange={setSelected}>
                                 <div className="  mt-1">
-                                <Listbox.Button className=" flow-root w-64 sm:w-72 py-2 pl-3 pr-6 text-left bg-white rounded-lg shadow-md 
-                                cursor-default focus:outline-none 
-                                 sm:text-sm  focus:border-green-300
-                                 focus:border-2
-                               ">
+                                <Listbox.Button className=" flow-root w-64 sm:w-72 py-2 pl-3 pr-6 text-left bg-white rounded-lg shadow-md cursor-default focus:outline-none focus-visible:ring-2 focus:ring-purple-600 focus-visible:ring-opacity-75
+                                 focus-visible:ring-green-600 focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 
+                                 focus-visible:border-green-500 sm:text-sm">
                                     <div className="block float-left truncate text-green-500">{selected.name}</div>
                                     <div className=" float-right inset-y-0 right-0 flex items-center  pointer-events-none">
                                     <SelectorIcon
@@ -155,17 +152,16 @@ const CreateCourse = ()=>
                             </Listbox>
     </div>
     <div className="pt-8 ...">
-                      <textarea  required onChange={updateDes}  value={description} rows="5" cols="28" className=" px-3 block border-2 border-green-300  focus:outline-none
-                        focus:border-green-300
+                      <textarea  required onChange={updateDes}  value={description} rows="5" cols="25" className=" px-3 block border-2 border-green-300 
+                      focus:outline-none  focus:border-green-300
                         focus:border-2
                        focus:ring-4 focus:ring-green-100 rounded-lg leading-6" placeholder="enter the description"></textarea>
                   </div>
                   <div className="pt-8 ... ">
-                      <input  required type="url" onChange={updateUrl}  value={url} className="py-2 w-64 sm:w-72 px-3
-                       block border-2 border-green-300  focus:outline-none 
+                      <input  required type="url" onChange={updateUrl}  value={url} className="py-2 w-64 sm:w-72 px-3 block border-2 border-green-300  focus:outline-none 
                        focus:border-green-300
-                       focus:border-2
-                      focus:ring-4 focus:ring-green-100 rounded-lg leading-6" placeholder="enter the URL"/>
+                        focus:border-2
+                       focus:ring-4 focus:ring-green-100 rounded-lg leading-6" placeholder="enter the URL"/>
                  
                   </div>
                   <div className={` p-1 text-sm text-red-600 ${(!error && url.length >0 )?"block":"hidden"}`}>
