@@ -19,7 +19,7 @@ const Nav = () =>{
         
       <span className="">
         <Tab disabled as={Fragment}  >
-          <img src="CC LOGO PARAMESH.png" className="w-50 h-16" alt="cc" />
+          <img src="CC1_no_bg.png" className="w-100 h-16" alt="cc" />
           
         </Tab></span>
           
@@ -78,7 +78,7 @@ const Nav = () =>{
          
         <div className=" transform duration-400 ease-in-out block md:hidden flow-root h-20 w-full bg-white
           shadow-md fixed inset-x-0 left-0   top-0  ">
-           <span className="float-left pt-1 ..."><img src="CC LOGO PARAMESH.png" className="w-50 h-16" alt="cc" /> </span>
+           <span className="float-left pt-1 ..."><img src="CC1_no_bg.png" className="w-50 h-16" alt="cc" /> </span>
            <span className=" p-7  float-right">
            <button className=" focus:outline  " >
                              <svg xmlns="http://www.w3.org/2000/svg" onClick={(e)=>{setNav(true)}} class={`h-6 w-6 text-green-500 ${(!sideNav)?"block":"hidden"}` } fill="none" viewBox="0 0 24 24" stroke="currentColor">
