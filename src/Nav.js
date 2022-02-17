@@ -8,7 +8,6 @@ import Home from './Home';
 const Nav = () =>{
   const [value ,setValue] = useState(0);
   const [sideNav , setNav] = useState(false);
-  const [open,setopen] = useState(false);
 
     return (
         <>
@@ -66,41 +65,7 @@ const Nav = () =>{
       <div className=" bg-green-300  p-8 ">
       <Tab.Panels>
         <Tab.Panel>nothing</Tab.Panel>
-        <Tab.Panel> 
-          <div className={`pt-8 ... ${!open ? "block p-8 h-screen":"hidden"}`}>
-      <div className=" pt-8 ... sm:pr-8 ... sm:pl-8 ... flex items-center justify-center ">
-        <div className="p-0 sm:p-8  w-full xl:w-4/5 h-full xl:h-screen  bg-white md:shadow-lg rounded-lg ... xl:flex grid">
-        <div className=" xl:p-0 sm:p-8 p-6 w-full xl:w-1/2 ">
-                   <img src="home.jpeg" className=" rounded w-full h-full" alt="Oops"/>
-               </div>
-               <div className=" p-4 sm:p-2 xl:p-6 w-full xl:w-1/2 h-full  text-2xl sm:flex  sm:justify-center ">
-                   <div className="w-full sm:w-3/4">
-                       <span className="text-3xl font-black">
-                          Your Course to Success
-                       </span>      
-                       <br>
-                       </br>
-                       <span className="text-lg font-semibold">
-                         Build your skills with programming courses 
-                       </span>
-                       <br>
-                       </br>
-                       <br>
-                       </br>
-                       <div className="">
-                          <button onClick={(e)=>{setopen(true)}} className="  h-10 p-1 sm:h-14 sm:p-2  rounded border-2 border-green-300  hover:bg-white hover:text-green-300  bg-green-300 text-white">Learn courses</button>
-                         </div>
-                       
-                   </div>
-                   </div>
-        </div>
-      </div>
-    </div>
-
-    <span className={`bg-green-300 ${open ? "block ":"hidden"}`}>
-      <Content/>
-    </span>
-        </Tab.Panel>
+        <Tab.Panel> <Home/></Tab.Panel>
         <Tab.Panel><span  className="p-8 h-screen"><Content/></span> </Tab.Panel>
         <Tab.Panel>
             <CreateCourse/>
@@ -150,7 +115,7 @@ const Nav = () =>{
            <div className={` p-8 h-screen  ${value==0 ? "block":"hidden"}`}>
              <Home/>
            </div>
-           <span className={`p-4 pt-8 ... h-screeen ${value==1 ? "block":"hidden"}`}>
+           <span className={`sm:p-4 pt-8 ... h-screeen ${value==1 ? "block":"hidden"}`}>
              <Content/>
            </span>
            <div className={`${value==2 ? "block":"hidden"}`}>
