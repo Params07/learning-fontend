@@ -112,7 +112,7 @@ const Nav = () =>{
       
       
       <div className="block  md:hidden bg-green-300 mt-4 ... pt-8 ... sm:p-8 ">
-           <div className={`  h-screen `}>
+           <div className={`p-8  h-screen ${value==0 ? "block":"hidden"} `}>
             <div className={`pt-8 ...p-0 sm:p-8 h-screen`}>
       <div className=" pt-8 ... sm:pr-8 ... sm:pl-8 ... flex items-center justify-center ">
         <div className="p-0 sm:p-8  w-full xl:w-4/5 h-full xl:h-screen  bg-white md:shadow-lg rounded-lg ... xl:flex grid">
