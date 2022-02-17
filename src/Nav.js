@@ -8,6 +8,7 @@ import Home from './Home';
 const Nav = () =>{
   const [value ,setValue] = useState(0);
   const [sideNav , setNav] = useState(false);
+  const [open,setopen] = useState(false);
 
     return (
         <>
