@@ -45,7 +45,7 @@ function Home() {
       </div>
     </div>
     <span className="bg-green-300">
-    <span className={` ${open ? "block h-full  ":"hidden"}`}>
+    <span className={` ${open ? "block   ":"hidden"}`}>
       <Content/>
     </span>
     </span>
