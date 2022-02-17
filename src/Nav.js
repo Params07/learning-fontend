@@ -65,7 +65,7 @@ const Nav = () =>{
       <div className=" bg-green-300  p-8 ">
       <Tab.Panels>
         <Tab.Panel>nothing</Tab.Panel>
-        <Tab.Panel> <div className="p-8 h-screen"><Home/></div> </Tab.Panel>
+        <Tab.Panel> <Home/></Tab.Panel>
         <Tab.Panel><span  className="p-8 h-screen"><Content/></span> </Tab.Panel>
         <Tab.Panel>
             <CreateCourse/>
