@@ -115,7 +115,7 @@ const Nav = () =>{
            <div className={`  h-screen  ${value==0 ? "block":"hidden"}`}>
              <Home/>
            </div>
-           <span className={`sm:p-4 pt-8 ... h-screeen ${value==1 ? "block":"hidden"}`}>
+           <span className={`sm:p-4 pt-8 ... bg-green-300 h-screeen ${value==1 ? "block":"hidden"}`}>
              <Content/>
            </span>
            <div className={`${value==2 ? "block":"hidden"}`}>
