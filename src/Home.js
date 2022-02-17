@@ -15,7 +15,7 @@ function Home() {
   return(
     <>
     <>
-    <div className={`pt-8 ... ${!open ? "block":"hidden"}`}>
+    <div className={`pt-8 ... ${!open ? "block h-screen":"hidden"}`}>
       <div className=" pt-8 ... sm:pr-8 ... sm:pl-8 ... flex items-center justify-center ">
         <div className="p-0 sm:p-8  w-full xl:w-4/5 h-full xl:h-screen  bg-white md:shadow-lg rounded-lg ... xl:flex grid">
         <div className=" xl:p-0 sm:p-8 p-6 w-full xl:w-1/2 ">
@@ -45,9 +45,9 @@ function Home() {
       </div>
     </div>
 
-    <div className={`bg-green-300 ${open ? "block":"hidden"}`}>
+    <span className={`bg-green-300 ${open ? "block ":"hidden"}`}>
       <Content/>
-    </div>
+    </span>
     </>
 
     </>
